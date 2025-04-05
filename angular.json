@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tpierce-portfolio": {
+    "dev-portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tpierce-portfolio",
+            "outputPath": "dist/dev-portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "tpierce-portfolio:build:production"
+              "buildTarget": "dev-portfolio:build:production"
             },
             "development": {
-              "buildTarget": "tpierce-portfolio:build:development"
+              "buildTarget": "dev-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
