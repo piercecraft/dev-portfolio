@@ -1,0 +1,11 @@
+/* app.component.scss */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; // Viewport height
+  }
+  
+  .content {
+    flex: 1; // This makes the content expand to push footer down
+  }

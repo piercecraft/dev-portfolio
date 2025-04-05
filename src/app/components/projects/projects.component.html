@@ -1,0 +1,13 @@
+<section class="projects">
+  <div class="container">
+    <h1>Key Projects</h1>
+
+    @if (projects$ | async; as projects) {
+    <div class="project-grid">
+      @for (project of projects; track project.id) {
+      <app-project-item [project]="project"></app-project-item>
+      }
+    </div>
+    }
+  </div>
+</section>

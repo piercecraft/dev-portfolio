@@ -1,0 +1,200 @@
+.header {
+    background-color: var(--header-bg-color, #ffffff);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.05));
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: var(--primary);
+      transform: translateY(-1px);
+    }
+  }
+  
+  /* Desktop Navigation */
+  .desktop-nav {
+    display: none;
+    
+    @media (min-width: 768px) {
+      display: block;
+    }
+    
+    ul {
+      display: flex;
+      gap: 2.5rem; // Increased from 2rem
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      padding: 0.5rem 0;
+      
+      &:hover {
+        color: var(--text-primary);
+        transform: translateY(-1px);
+      }
+      
+      &.active {
+        color: var(--primary);
+        font-weight: 600;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+  
+  /* Mobile Hamburger Button */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1002;
+    
+    span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: var(--text-primary);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: left center;
+      border-radius: 3px;
+    }
+    
+    &.active {
+      span:first-child {
+        transform: rotate(45deg) translateY(-2px);
+        background-color: var(--primary);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+        width: 0;
+      }
+      span:last-child {
+        transform: rotate(-45deg) translateY(2px);
+        background-color: var(--primary);
+      }
+    }
+    
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  /* Mobile Overlay */
+  .mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  /* Mobile Navigation */
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 320px;
+    height: 100vh;
+    background-color: var(--header-bg-color, #ffffff);
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1001;
+    padding: 6rem 2rem 2rem;
+    box-shadow: -4px 0 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid var(--border-color, rgba(0, 0, 0, 0.05));
+    
+    &.active {
+      right: 0;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem; // Increased from 1.5rem
+    }
+    
+    a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 1.25rem; // Increased from 1.2rem
+      font-weight: 500;
+      display: block;
+      padding: 0.75rem 1rem; // Added horizontal padding
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        color: var(--primary);
+        background-color: var(--primary-light);
+        transform: translateX(4px);
+      }
+      
+      &.active {
+        color: var(--primary);
+        font-weight: 600;
+        background-color: rgba(var(--primary-rgb), 0.1);
+      }
+    }
+    
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }

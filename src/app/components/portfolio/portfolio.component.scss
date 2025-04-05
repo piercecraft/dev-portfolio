@@ -1,0 +1,134 @@
+/* portfolio.component.scss */
+.portfolio {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--text-primary);
+  
+    @media (min-width: 768px) {
+      padding: 4rem 2rem;
+    }
+  }
+  
+  .portfolio-title {
+    font-size: var(--text-4xl);
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), transparent);
+    }
+  }
+  
+  .portfolio-description {
+    max-width: 65ch;
+    margin: 0 auto 3rem;
+    text-align: center;
+    
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+  }
+  
+  .portfolio-stack {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  
+  .stack-card {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .stack-header {
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .stack-icon {
+    font-size: 1.5rem;
+  }
+  
+  .stack-items {
+    padding-left: 1.25rem;
+    
+    li {
+      margin-bottom: 0.75rem;
+      position: relative;
+      line-height: 1.5;
+  
+      &::before {
+        content: '▹';
+        position: absolute;
+        left: -1.25rem;
+        color: var(--primary);
+      }
+    }
+  }
+  
+  .portfolio-features {
+    h2 {
+      font-size: var(--text-2xl);
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--primary);
+    }
+  }
+  
+  .feature-grid {
+    display: grid;
+    gap: 1.5rem;
+  
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  
+  .feature-card {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    
+    h3 {
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+    
+    p {
+      line-height: 1.7;
+    }
+    
+    code {
+      background: rgba(var(--primary-rgb), 0.1);
+      color: var(--primary);
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+  }

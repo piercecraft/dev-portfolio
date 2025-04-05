@@ -1,0 +1,154 @@
+.hero {
+    /* Only visual styling - no layout constraints */
+    background: linear-gradient(to bottom, var(--surface) 0%, var(--background) 100%);
+    padding: 2rem 0;
+  
+    @media (min-width: 768px) {
+      padding: 4rem 0 4rem 1rem;
+    }
+  
+    /* Remove all width/position overrides */
+    &::before {
+      content: none; /* Remove if causing issues */
+    }
+  }
+  
+  /* Text elements inherit from app layout */
+  .hero-content {
+    /* No width/margin/padding overrides */
+    /* Only typography styles */
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+      
+      @media (min-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  
+  .hero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; // Increased from 0.5rem
+    margin-bottom: 1.5rem; // Increased from 1rem
+    
+    .title-line {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.1; // Tighter for headlines
+      letter-spacing: -0.025em; // Slightly condensed
+      color: var(--text-primary);
+      
+      &.accent {
+        color: var(--primary);
+        background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      @media (min-width: 768px) {
+        font-size: 3.5rem;
+        line-height: 1;
+      }
+    }
+    
+    .subtitle {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--text-secondary);
+      // max-width: 36ch;
+      line-height: 1.5;
+      
+      @media (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+    position: relative;
+    display: inline-block;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 50%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), transparent);
+      border-radius: 3px;
+    }
+  }
+
+  @container (inline-size > 768px) {
+    p {
+      padding-right: calc(1.5rem + (100vw - 100%));
+    }
+  }
+
+  
+  
+  .cta-section {
+    margin-top: 3rem; // Increased from 2rem
+    
+    .cta-text {
+      font-size: 1.2rem;
+      margin-bottom: 2rem; // Increased from 1.5rem
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1.25rem; // Increased from 1rem
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 0.875rem 1.75rem; // Slightly larger
+    border-radius: 6px; // Smoother than 4px
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+    &-primary {
+      background-color: var(--primary);
+      color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      
+      &:hover {
+        background-color: var(--primary-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+    }
+    
+    &-secondary {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      background-color: transparent;
+      
+      &:hover {
+        background-color: var(--primary-light);
+        transform: translateY(-2px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+    }
+    
+    // New micro-interaction
+    &:active {
+      transform: translateY(0);
+      transition-duration: 0.1s;
+    }
+  }
