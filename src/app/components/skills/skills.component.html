@@ -1,0 +1,13 @@
+<section class="skills">
+  <div class="container">
+    <h1>Technical Skills</h1>
+
+    @if (skills$ | async; as skills) {
+    <div class="skills-grid">
+      @for (category of skills; track category.category) {
+      <app-skill-item [skillCategory]="category"></app-skill-item>
+      }
+    </div>
+    }
+  </div>
+</section>
