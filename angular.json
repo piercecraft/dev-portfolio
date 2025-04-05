@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "https://piercecraft.github.io/dev-portfolio/",
             "outputPath": "dist/dev-portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
