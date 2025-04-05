@@ -4,6 +4,7 @@
 /node_modules
 /.ng_pkg_build
 .angular/cache/
+dist/dev-portfolio/*.js
 
 # IDE
 /.vscode
