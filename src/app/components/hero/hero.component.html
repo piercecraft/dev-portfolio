@@ -1,0 +1,88 @@
+<section class="hero">
+  <div class="container">
+    <!-- Add this container div -->
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="title-line">{{ name() }}</span>
+        <span class="title-line accent">{{ title() }}</span>
+        <span class="subtitle">{{ subtitle() }}</span>
+      </h1>
+
+      <div class="intro-section">
+        @for (line of intro(); track $index) {
+        <p class="intro-text">
+          {{ line }}
+        </p>
+        }
+      </div>
+
+      <div class="skills-section">
+        <h2 class="section-title">{{ skillTitle() }}</h2>
+        @for (line of skills(); track $index) {
+        <p class="skills-text">
+          {{ line }}
+        </p>
+        }
+      </div>
+
+      <div class="career-section">
+        <h2 class="section-title">{{ careerTitle() }}</h2>
+        <p class="career-text">
+          {{ careerIntro() }}
+        </p>
+        <div class="career-text">
+          <ul>
+            <!-- for going here -->
+            @for (bullet of careerBullets(); track $index) { @if (typeof bullet
+            === 'string') {
+            <li>
+              {{ bullet }}
+            </li>
+            } @else if (typeof bullet === 'object') {
+            <li>
+              {{ bullet[0] }}
+              <ul>
+                @for (subbullet of bullet; track $index) { @if ($index>0) {
+                <li>
+                  {{ subbullet }}
+                </li>
+                } }
+              </ul>
+            </li>
+            } }
+          </ul>
+        </div>
+        <p class="career-text">
+          {{ careerIntro2() }}
+        </p>
+        <div class="career-text">
+          <ul>
+            @for (bullet of careerBullets2(); track $index) {
+            <li>{{ bullet }}</li>
+            }
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <p class="cta-text">
+          {{ careerOutro() }}
+        </p>
+        <div class="cta-buttons">
+          <a
+            routerLink="/projects"
+            class="btn btn-primary"
+            routerLinkActive="active"
+            >View Projects</a
+          >
+          <a
+            routerLink="/contact"
+            class="btn btn-secondary"
+            routerLinkActive="active"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "prop": "name",
+    "text": "Thomas Pierce"
+  },
+  {
+    "id": 2,
+    "prop": "title",
+    "text": "Senior Front-End Developer"
+  },
+  {
+    "id": 3,
+    "prop": "subtitle",
+    "text": "Building Performant, User-Focused Web Applications"
+  },
+  {
+    "id": 4,
+    "prop": "intro",
+    "text": [
+      "I am a Senior Front-End Developer with extensive experience in Angular (AngularJS to Angular 19), React, and Vue.js. I am passionate about creating efficient, maintainable applications that provide exceptional user experiences.",
+      "My focus is on delivering performant and user-friendly applications. I have a broad understanding of front-end technologies and a strong commitment to building solutions that scale."
+    ]
+  },
+  {
+    "id": 5,
+    "prop": "skillTitle",
+    "text": "Summary of Skills"
+  },
+  {
+    "id": 6,
+    "prop": "skills",
+    "text": [
+      "My core front-end skills include Angular, TypeScript, React, and Vue.js, along with state management libraries like NgRx, Redux, and Zustand. I am proficient in modern JavaScript (ES6+), CSS3, Sass/Less, Responsive Design, and Accessibility (WCAG).",
+      "I also have experience with back-end technologies such as Node.js, Next.js, API development (REST, GraphQL), database interaction (PostgreSQL, MongoDB), and cloud platforms (AWS).",
+      "I am dedicated to clean code principles (SOLID, DRY, YAGNI, KISS), web performance optimization, and utilizing tools like Git, Docker, and CI/CD pipelines to ensure efficient development workflows."
+    ]
+  },
+  {
+    "id": 7,
+    "prop": "careerTitle",
+    "text": "Brief Career Overview"
+  },
+  {
+    "id": 8,
+    "prop": "careerIntro",
+    "text": "As a front-end Architect with decades of experience, I've specialized in transforming legacy systems into modern, scalable solutions across healthcare, enterprise software, and cloud platforms. My career highlights include:"
+  },
+  {
+    "id": 9,
+    "prop": "careerBullets",
+    "text": [
+      "Led the complete modernization of Anju Software's eClinical Suite, reverse-engineering a mission-critical Java/JSP EDC system into a .NET/Angular platform while maintaining 100% functionality during transition, preserving $10M+ in annual support contracts.",
+      "Architected Citrix NFuse's web interface (Crossroads A-List Award winner) and rebuilt Citrix's global support portal, reducing support calls by 40% through innovative self-service tools and partner portal integration.",
+      "Spearheaded the AutoEncoder medical coding system's transformation into a standalone Angular/.NET API product, increasing user coding speed by 38% and creating new revenue streams.",
+      [
+        "Successfully delivered multiple enterprise-grade applications under tight deadlines, including:",
+        "AWS cloud migrations with serverless components",
+        "Clinical trial systems (EDC, CDM, eCRF) compliant with 21 CFR Part 11",
+        "Complex medical dictionary integrations (WHODrug/MedDRA)"
+      ],
+      [
+        "Recognized for technical leadership in:",
+        "Legacy system modernization (Java-to-.NET, monolithic-to-microservices)",
+        "Cross-platform compatibility solutions (Windows/Java/UNIX via Citrix ICA protocol)",
+        "UI/UX standardization across product suites"
+      ]
+    ]
+  },
+  {
+    "id": 10,
+    "prop": "careerIntro2",
+    "text": "My technical versatility spans Angular 2-19, React, .NET Core, and cloud architectures, complemented by proven abilities to:"
+  },
+  {
+    "id": 11,
+    "prop": "careerBullets2",
+    "text": [
+      "Mentor teams through technology transitions",
+      "Communicate complex technical concepts to executives",
+      "Balance innovation with regulatory requirements",
+      "Rescue troubled projects through hands-on leadership"
+    ]
+  },
+  {
+    "id": 12,
+    "prop": "careerOutro",
+    "text": "Explore my projects below to see examples of my work, or contact me to discuss how I can contribute to your team."
+  }
+]
