@@ -8,7 +8,7 @@ import { Content } from '../models/content.model';
 })
 export class ContentEnService {
   private http = inject(HttpClient);
-  private contentEnUrl = 'data/content_en.json';
+  private contentEnUrl = 'https://piercecraft.github.io/dev-portfolio/data/content_en.json';
   private contentEn$ = this.http.get<Content[]>(this.contentEnUrl).pipe(
     shareReplay(1)
   );

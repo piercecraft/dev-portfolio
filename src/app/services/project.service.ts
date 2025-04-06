@@ -8,7 +8,7 @@ import { Project } from '../models/project.model';
 })
 export class ProjectService {
   private http = inject(HttpClient);
-  private projectsUrl = 'data/projects.json';
+  private projectsUrl = 'https://piercecraft.github.io/dev-portfolio/data/projects.json';
   private projects$ = this.http.get<Project[]>(this.projectsUrl).pipe(
     shareReplay(1)
   );
