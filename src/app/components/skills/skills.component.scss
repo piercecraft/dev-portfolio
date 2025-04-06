@@ -25,6 +25,14 @@
         background: linear-gradient(90deg, var(--primary), transparent);
       }
     }
+    p {
+      text-align: center;
+      font-size: var(--text-lg);
+      em {
+      font-style: italic;
+      color: var(--text-secondary); 
+      }
+    }
   }
   
   .skills-grid {

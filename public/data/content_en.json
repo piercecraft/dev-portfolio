@@ -86,5 +86,136 @@
     "id": 12,
     "prop": "careerOutro",
     "text": "Explore my projects below to see examples of my work, or contact me to discuss how I can contribute to your team."
+  },
+  {
+    "id": 13,
+    "prop": "lbl_viewProjects",
+    "text": "View Projects"
+  },
+  {
+    "id": 14,
+    "prop": "lbl_contact",
+    "text": "Contact Me"
+  },
+  { "id": 15, "prop": "lnk_home", "text": "Home" },
+  { "id": 16, "prop": "lnk_skills", "text": "Skills" },
+  { "id": 17, "prop": "lnk_projects", "text": "Projects" },
+  { "id": 18, "prop": "lnk_about", "text": "About" },
+  { "id": 19, "prop": "lnk_contact", "text": "Contact" },
+  { "id": 20, "prop": "rights", "text": "All rights reserved" },
+  {
+    "id": 21,
+    "prop": "builtWith",
+    "text": "Built with Angular 19, Tailwind CSS, and TypeScript."
+  },
+  { "id": 22, "prop": "contactTitle", "text": "Get In Touch" },
+  {
+    "id": 23,
+    "prop": "contactIntro",
+    "text": "While I keep my digital footprint focused, I'm always interested in hearing about new opportunities, collaborations, or interesting technical challenges."
+  },
+  {
+    "id": 24,
+    "prop": "contactAvail",
+    "text": "Currently available for select consulting engagements"
+  },
+  {
+    "id": 25,
+    "prop": "contactResponse",
+    "text": "Typically responds within 24 hours"
+  },
+  { "id": 26, "prop": "email", "text": "Email" },
+  { "id": 27, "prop": "linkedIn", "text": "LinkedIn" },
+  {
+    "id": 28,
+    "prop": "unused1",
+    "text": "Connect with a brief message about your project"
+  },
+  { "id": 29, "prop": "portfolioTitle", "text": "Portfolio Architecture" },
+  {
+    "id": 30,
+    "prop": "portfolioIntro",
+    "text": " This portfolio was hand-designed with performance and maintainability in mind, leveraging modern Angular features and asynchronous data patterns. It's hosted on GitHub Pages. You can check out portfolio source on"
+  },
+  { "id": 31, "prop": "github", "text": "GitHub" },
+  { "id": 32, "prop": "portfolioSection1", "text": "Core Technologies" },
+  {
+    "id": 33,
+    "prop": "portfolioBullets",
+    "text": [
+      "Angular 19 (Standalone Components)",
+      "TypeScript 5.3",
+      "SCSS with CSS Variables",
+      "RxJS for state management",
+      "Responsive CSS Grid/Flexbox"
+    ]
+  },
+  { "id": 34, "prop": "portfolioSection2", "text": "Data Handling" },
+  {
+    "id": 35,
+    "prop": "portfolioBullets2",
+    "text": [
+      "Asynchronous JSON loading",
+      "Lazy-loaded components",
+      "ShareReplay caching",
+      "Dynamic imports",
+      "Error handling with fallbacks"
+    ]
+  },
+  { "id": 36, "prop": "portfolioSection3", "text": "Design System" },
+  {
+    "id": 37,
+    "prop": "portfolioBullets3",
+    "text": [
+      "Consistent typography scale",
+      "Themeable color variables",
+      "Accessible contrast ratios",
+      "Viewport-adaptive spacing",
+      "Subtle micro-interactions"
+    ]
+  },
+
+  {
+    "id": 36,
+    "prop": "portfolioFeaturesTitle",
+    "text": "Key Implementation Details"
+  },
+  {
+    "id": 37,
+    "prop": "portfolioFeatures",
+    "text": [
+      [
+        "Dynamic Text Content",
+        "All viewable text loaded via JSON for easy updates and potential internationalization."
+      ],
+      [
+        "Device Compatibility",
+        "Optimized for desktop, tablet, mobile, and micro-device screen sizes."
+      ],
+      [
+        "Project Data Flow",
+        "Projects load asynchronously from JSON via Angular's HttpClient, with cached responses for performance."
+      ],
+      [
+        "Skills Visualization",
+        "Skills data is transformed into categorized streams, with experience levels mapped to visual indicators."
+      ],
+      [
+        "Performance",
+        "Optimized bundle sizes through standalone components and lazy loading."
+      ],
+      [
+        "Responsive Layout",
+        "CSS Grid and Flexbox adapt to viewport sizes while maintaining typographic rhythm."
+      ]
+    ]
+  },
+
+  { "id": 38, "prop": "projectsTitle", "text": "Key Projects" },
+  { "id": 39, "prop": "skillsTitle", "text": "Technical Skills" },
+  {
+    "id": 40,
+    "prop": "skillsIntro",
+    "text": "Skills are ranked from 1 (Basic Proficiency) to 5 (Extensive Experience)."
   }
 ]

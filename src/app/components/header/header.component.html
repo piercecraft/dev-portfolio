@@ -1,19 +1,31 @@
 <header class="header">
   <div class="header-container">
-    <a routerLink="/home" class="logo">{{ name() }}</a>
+    <a routerLink="/home" class="logo">{{ lnk_contact() }}</a>
     <app-theme-toggle></app-theme-toggle>
     <!-- Desktop Navigation -->
     <nav class="desktop-nav">
       <ul>
-        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-        <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
         <li>
-          <a routerLink="/projects" routerLinkActive="active">Projects</a>
+          <a routerLink="/home" routerLinkActive="active">{{ lnk_home() }}</a>
         </li>
         <li>
-          <a routerLink="/about" routerLinkActive="active">About</a>
+          <a routerLink="/skills" routerLinkActive="active">{{
+            lnk_skills()
+          }}</a>
         </li>
-        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        <li>
+          <a routerLink="/projects" routerLinkActive="active">{{
+            lnk_projects()
+          }}</a>
+        </li>
+        <li>
+          <a routerLink="/about" routerLinkActive="active">{{ lnk_about() }}</a>
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="active">{{
+            lnk_contact()
+          }}</a>
+        </li>
       </ul>
     </nav>
 
@@ -40,13 +52,16 @@
   <nav class="mobile-nav" [class.active]="menuOpen">
     <ul>
       <li>
-        <a routerLink="/home" routerLinkActive="active" (click)="closeMenu()"
-          >Home</a
-        >
+        <a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">{{
+          lnk_home()
+        }}</a>
       </li>
       <li>
-        <a routerLink="/skills" routerLinkActive="active" (click)="closeMenu()"
-          >Skills</a
+        <a
+          routerLink="/skills"
+          routerLinkActive="active"
+          (click)="closeMenu()"
+          >{{ lnk_skills() }}</a
         >
       </li>
       <li>
@@ -54,17 +69,23 @@
           routerLink="/projects"
           routerLinkActive="active"
           (click)="closeMenu()"
-          >Projects</a
+          >{{ lnk_projects() }}</a
         >
       </li>
       <li>
-        <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()"
-          >About</a
+        <a
+          routerLink="/about"
+          routerLinkActive="active"
+          (click)="closeMenu()"
+          >{{ lnk_about() }}</a
         >
       </li>
       <li>
-        <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()"
-          >Contact</a
+        <a
+          routerLink="/contact"
+          routerLinkActive="active"
+          (click)="closeMenu()"
+          >{{ lnk_contact() }}</a
         >
       </li>
     </ul>

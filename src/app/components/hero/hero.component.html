@@ -1,6 +1,5 @@
 <section class="hero">
   <div class="container">
-    <!-- Add this container div -->
     <div class="hero-content">
       <h1 class="hero-title">
         <span class="title-line">{{ name() }}</span>
@@ -32,7 +31,6 @@
         </p>
         <div class="career-text">
           <ul>
-            <!-- for going here -->
             @for (bullet of careerBullets(); track $index) { @if (typeof bullet
             === 'string') {
             <li>
@@ -73,13 +71,13 @@
             routerLink="/projects"
             class="btn btn-primary"
             routerLinkActive="active"
-            >View Projects</a
+            >{{ lbl_viewProjects() }}</a
           >
           <a
             routerLink="/contact"
             class="btn btn-secondary"
             routerLinkActive="active"
-            >Contact Me</a
+            >{{ lbl_contact() }}</a
           >
         </div>
       </div>

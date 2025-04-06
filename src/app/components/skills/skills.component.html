@@ -1,6 +1,9 @@
 <section class="skills">
   <div class="container">
-    <h1>Technical Skills</h1>
+    <h1>{{ skillsTitle() }}</h1>
+    <p>
+      <em>{{ skillsIntro() }}</em>
+    </p>
 
     @if (skills$ | async; as skills) {
     <div class="skills-grid">

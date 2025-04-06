@@ -25,6 +25,8 @@ export class HeroComponent {
   careerIntro2$ = this.contentEnService.getContent('careerIntro2');
   careerBullets2$ = this.contentEnService.getContent('careerBullets2');
   careerOutro$ = this.contentEnService.getContent('careerOutro');
+  lbl_viewProjects$ = this.contentEnService.getContent('lbl_viewProjects');
+  lbl_contact$ = this.contentEnService.getContent('lbl_contact');
 
   name = toSignal(this.name$, { initialValue: '' });
   title = toSignal(this.title$, { initialValue: '' });
@@ -38,6 +40,8 @@ export class HeroComponent {
   careerIntro2 = toSignal(this.careerIntro2$, { initialValue: [''] });
   careerBullets2 = toSignal(this.careerBullets2$, { initialValue: ['',[]] });
   careerOutro = toSignal(this.careerOutro$, { initialValue: [''] });
+  lbl_viewProjects = toSignal(this.lbl_viewProjects$, { initialValue: '' });
+  lbl_contact = toSignal(this.lbl_contact$, { initialValue: '' });
 
   constructor() {
     

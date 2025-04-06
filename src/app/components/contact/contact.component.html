@@ -1,26 +1,23 @@
 <!-- contact.component.html -->
 <section class="contact">
   <div class="contact-container">
-    <h1 class="contact-title">Get In Touch</h1>
+    <h1 class="contact-title">{{ contactTitle() }}</h1>
 
     <div class="contact-content">
       <div class="contact-message">
         <p>
-          While I keep my digital footprint focused, I'm always interested in
-          hearing about new opportunities, collaborations, or interesting
-          technical challenges.
+          {{ contactIntro() }}
         </p>
 
         <div class="contact-availability">
           <div class="availability-indicator"></div>
-          <span>Currently available for select consulting engagements</span>
+          <span>{{ contactAvail() }}</span>
         </div>
       </div>
 
       <div class="contact-methods">
         <div class="contact-card">
           <div class="contact-icon">
-            <!-- Email icon - properly sized -->
             <svg width="24" height="24" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
@@ -29,17 +26,16 @@
             </svg>
           </div>
           <div class="contact-details">
-            <h3>Email</h3>
+            <h3>{{ email() }}</h3>
             <a href="mailto:tpierce8080@gmail.com" class="contact-link"
               >tpierce8080&#64;gmail.com</a
             >
-            <p class="contact-response">Typically responds within 24 hours</p>
+            <p class="contact-response">{{ contactResponse() }}</p>
           </div>
         </div>
 
         <div class="contact-card">
           <div class="contact-icon">
-            <!-- LinkedIn icon - properly sized -->
             <svg width="24" height="24" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
@@ -48,7 +44,7 @@
             </svg>
           </div>
           <div class="contact-details">
-            <h3>LinkedIn</h3>
+            <h3>{{ linkedIn() }}</h3>
             <a
               href="https://www.linkedin.com/in/piercethomas"
               target="_blank"
@@ -58,7 +54,7 @@
               linkedin.com/in/piercethomas
             </a>
             <p class="contact-response">
-              Connect with a brief message about your project
+              {{ contactResponse2() }}
             </p>
           </div>
         </div>

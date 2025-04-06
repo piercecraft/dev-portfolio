@@ -17,7 +17,7 @@
       {
         "id": 25,
         "name": "Vue.js",
-        "experience": 3,
+        "experience": 2,
         "notes": "Vue 2 composition API"
       },
       {
@@ -65,20 +65,26 @@
       {
         "id": 29,
         "name": "TailwindCSS",
-        "experience": 3,
+        "experience": 4,
         "notes": "Modern utility-first workflows"
       },
       {
         "id": 7,
         "name": "PrimeNG",
-        "experience": 4,
+        "experience": 5,
         "notes": "Data tables, complex UI components"
       },
       {
         "id": 30,
         "name": "Angular Material",
-        "experience": 4,
+        "experience": 5,
         "notes": "Component library implementation"
+      },
+      {
+        "id": 999,
+        "name": "WebSockets",
+        "experience": 4,
+        "notes": "Connections, data, scaling"
       }
     ]
   },
@@ -88,7 +94,7 @@
       {
         "id": 8,
         "name": ".NET/C#",
-        "experience": 5,
+        "experience": 3,
         "notes": "ASP.NET, ASP.NET Core, Web API"
       },
       {
@@ -100,7 +106,7 @@
       {
         "id": 32,
         "name": "Java/JSP",
-        "experience": 4,
+        "experience": 2,
         "notes": "Legacy system maintenance"
       },
       {
@@ -112,13 +118,13 @@
       {
         "id": 9,
         "name": "Node.js",
-        "experience": 5,
+        "experience": 4,
         "notes": "Express, NestJS frameworks"
       },
       {
         "id": 10,
         "name": "Python",
-        "experience": 3,
+        "experience": 2,
         "notes": "Scripting and automation"
       },
       {
@@ -141,13 +147,13 @@
       {
         "id": 35,
         "name": "Cucumber",
-        "experience": 3,
+        "experience": 2,
         "notes": "BDD testing"
       },
       {
         "id": 36,
         "name": "Cypress",
-        "experience": 4,
+        "experience": 2,
         "notes": "Modern front-end testing"
       }
     ]
@@ -205,13 +211,13 @@
       {
         "id": 12,
         "name": "SQL Server",
-        "experience": 5,
-        "notes": "Optimization, complex queries"
+        "experience": 3,
+        "notes": "Standard queries, data manipulation, basic db administration"
       },
       {
         "id": 13,
         "name": "MongoDB",
-        "experience": 4,
+        "experience": 2,
         "notes": "NoSQL document stores"
       },
       {
@@ -228,13 +234,13 @@
       {
         "id": 15,
         "name": "AWS",
-        "experience": 4,
+        "experience": 3,
         "notes": "EC2, Lambda, S3, CloudFront"
       },
       {
         "id": 16,
         "name": "Docker",
-        "experience": 4,
+        "experience": 3,
         "notes": "Containerization, microservices"
       },
       {
@@ -292,7 +298,7 @@
       {
         "id": 24,
         "name": "Healthcare Interoperability",
-        "experience": 4,
+        "experience": 3,
         "notes": "HL7, FHIR standards"
       }
     ]

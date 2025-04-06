@@ -13,12 +13,12 @@ export class ContentEnService {
     shareReplay(1)
   );
 
-  getContent(prop: string): Observable<string | (string | string[])[]> {
+  getContent(prop: string): Observable<string | (string | string[] | string[][])[]> {
     return this.contentEn$.pipe(
       map(content => {
         const foundContent = content.find(item => item.prop === prop);
         if (foundContent) {
-            return foundContent.text; // string or string[]
+            return foundContent.text; // string or string[] or maybe even string[][]
         } else {
           return ''; // Return an empty string if no matching content is found
         }

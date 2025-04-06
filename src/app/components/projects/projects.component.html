@@ -1,6 +1,6 @@
 <section class="projects">
   <div class="container">
-    <h1>Key Projects</h1>
+    <h1>{{ projectsTitle() }}</h1>
 
     @if (projects$ | async; as projects) {
     <div class="project-grid">

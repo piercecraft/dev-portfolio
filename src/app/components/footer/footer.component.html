@@ -2,10 +2,10 @@
   <div class="footer-content">
     <div class="angular-badge">
       <span class="angular-logo">🅰</span>
-      <span>Built with Angular 19</span>
+      <span>{{ builtWith() }}</span>
     </div>
     <div class="copyright">
-      &copy; {{ currentYear() }} Thomas Pierce. All rights reserved.
+      &copy; {{ currentYear() }} {{ name() }}. {{ rights() }}.
     </div>
   </div>
 </footer>
