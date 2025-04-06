@@ -143,7 +143,7 @@
     "id": 33,
     "prop": "portfolioBullets",
     "text": [
-      "Angular 19 (Standalone Components)",
+      "Angular 19 (Standalone Components, Signals)",
       "TypeScript 5.3",
       "SCSS with CSS Variables",
       "RxJS for state management",
