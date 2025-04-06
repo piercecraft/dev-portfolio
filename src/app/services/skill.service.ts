@@ -8,7 +8,7 @@ import { SkillCategory } from '../models/skill.model';
 })
 export class SkillService {
   private http = inject(HttpClient);
-  private skillsUrl = 'https://piercecraft.github.io/dev-portfolio/data/skills.json';
+  private skillsUrl = '/data/skills.json';
   private skills$ = this.http.get<SkillCategory[]>(this.skillsUrl).pipe(
     shareReplay(1)
   );
