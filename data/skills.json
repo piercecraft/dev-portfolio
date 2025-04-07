@@ -59,13 +59,13 @@
       {
         "id": 28,
         "name": "Bootstrap",
-        "experience": 4,
+        "experience": 5,
         "notes": "v3-v5, legacy support"
       },
       {
         "id": 29,
         "name": "TailwindCSS",
-        "experience": 4,
+        "experience": 5,
         "notes": "Modern utility-first workflows"
       },
       {
@@ -75,10 +75,58 @@
         "notes": "Data tables, complex UI components"
       },
       {
+        "id": 998,
+        "name": "AG Grid",
+        "experience": 5,
+        "notes": "Data grid component"
+      },
+      {
+        "id": 23,
+        "name": "HTML5",
+        "experience": 5,
+        "notes": "Semantic markup, accessibility"
+      },
+      {
+        "id": 22,
+        "name": "CSS Grid/Flexbox",
+        "experience": 5,
+        "notes": "Responsive layouts"
+      },
+      {
         "id": 30,
         "name": "Angular Material",
         "experience": 5,
         "notes": "Component library implementation"
+      },
+      {
+        "id": 24,
+        "name": "Responsive Design",
+        "experience": 5,
+        "notes": "Mobile-first approach"
+      },
+      {
+        "id": 9999,
+        "name": "Micro-Frontends",
+        "experience": 4,
+        "notes": "Module federation, microservices"
+      },
+      {
+        "id": 9998,
+        "name": "Web Components",
+        "experience": 5,
+        "notes": "Custom elements, shadow DOM"
+      },
+      {
+        "id": 9997,
+        "name": "Progressive Web Apps",
+        "experience": 5,
+        "notes": "Service workers, offline capabilities"
+      },
+      {
+        "id": 9996,
+        "name": "GraphQL",
+        "experience": 4,
+        "notes": "Apollo Client, Relay"
       },
       {
         "id": 999,
@@ -100,14 +148,20 @@
       {
         "id": 31,
         "name": "ASP.NET Core Identity",
-        "experience": 4,
+        "experience": 3,
         "notes": "Authentication/authorization systems"
+      },
+      {
+        "id": 9995,
+        "name": "PHP",
+        "experience": 2,
+        "notes": "Web server integration, scripting"
       },
       {
         "id": 32,
         "name": "Java/JSP",
         "experience": 2,
-        "notes": "Legacy system maintenance"
+        "notes": "Legacy system maintenance, Spring MVC"
       },
       {
         "id": 33,
@@ -139,22 +193,28 @@
     "category": "Testing",
     "items": [
       {
+        "id": 44,
+        "name": "Unit Testing",
+        "experience": 5,
+        "notes": "Jasmine, Karma, Jest"
+      },
+      {
+        "id": 45,
+        "name": "End-to-End Testing",
+        "experience": 4,
+        "notes": "Protractor, Cypress"
+      },
+      {
+        "id": 46,
+        "name": "Integration Testing",
+        "experience": 4,
+        "notes": "Postman"
+      },
+      {
         "id": 34,
         "name": "Selenium",
-        "experience": 4,
+        "experience": 3,
         "notes": "Browser automation"
-      },
-      {
-        "id": 35,
-        "name": "Cucumber",
-        "experience": 2,
-        "notes": "BDD testing"
-      },
-      {
-        "id": 36,
-        "name": "Cypress",
-        "experience": 2,
-        "notes": "Modern front-end testing"
       }
     ]
   },

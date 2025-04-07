@@ -50,9 +50,9 @@
     "id": 9,
     "prop": "careerBullets",
     "text": [
-      "Led the complete modernization of Anju Software's eClinical Suite, reverse-engineering a mission-critical Java/JSP EDC system into a .NET/Angular platform while maintaining 100% functionality during transition, preserving $10M+ in annual support contracts.",
+      "Led the complete modernization of Anju Software's eClinical Suite, reverse-engineering a mission-critical Java/JSP EDC system into a .NET/Angular platform while maintaining 100% functionality during transition, preserving all annual support contracts.",
       "Architected Citrix NFuse's web interface (Crossroads A-List Award winner) and rebuilt Citrix's global support portal, reducing support calls by 40% through innovative self-service tools and partner portal integration.",
-      "Spearheaded the AutoEncoder medical coding system's transformation into a standalone Angular/.NET API product, increasing user coding speed by 38% and creating new revenue streams.",
+      "Spearheaded the AutoEncoder medical coding system's transformation into a standalone Angular/.NET API product, greatly improving user experience and search performance leading to new revenue streams.",
       [
         "Successfully delivered multiple enterprise-grade applications under tight deadlines, including:",
         "AWS cloud migrations with serverless components",
@@ -70,7 +70,7 @@
   {
     "id": 10,
     "prop": "careerIntro2",
-    "text": "My technical versatility spans Angular 2-19, React, .NET Core, and cloud architectures, complemented by proven abilities to:"
+    "text": "My technical versatility spans Angular 2-19, React, .NET, and cloud architectures, complemented by proven abilities to:"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
   {
     "id": 12,
     "prop": "careerOutro",
-    "text": "Explore my projects below to see examples of my work, or contact me to discuss how I can contribute to your team."
+    "text": "Explore my projects below to see details of past work, or contact me to discuss how I can contribute to your team."
   },
   {
     "id": 13,
