@@ -23,7 +23,6 @@ export class HeaderComponent {
   lnk_about$ = this.contentEnService.getContent('lnk_about');
   lnk_contact$ = this.contentEnService.getContent('lnk_contact');
 
-
   name = toSignal(this.name$, { initialValue: '' });
   lnk_home = toSignal(this.lnk_home$, { initialValue: 'home' });
   lnk_skills = toSignal(this.lnk_skills$, { initialValue: 'skills' });
