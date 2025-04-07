@@ -1,7 +1,14 @@
 <button (click)="toggleTheme()" class="theme-toggle">
-  @if (this.themeService.currentTheme==='dark') {
-  <span class="light-icon">☀️ Light Mode</span>
-  } @else {
-  <span class="dark-icon">🌙 Dark Mode</span>
-  }
+  <div class="toggle-switch">
+    <div
+      class="toggle-thumb"
+      [class.dark]="this.themeService.currentTheme === 'dark'"
+    >
+      @if (this.themeService.currentTheme === 'dark') {
+      <span class="icon">🌙</span>
+      } @else {
+      <span class="icon">☀️</span>
+      }
+    </div>
+  </div>
 </button>

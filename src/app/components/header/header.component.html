@@ -1,6 +1,8 @@
 <header class="header">
   <div class="header-container">
-    <a routerLink="/home" class="logo">{{ name() }}</a>
+    <a routerLink="/home" class="logo" [attr.data-content]="name()">{{
+      name()
+    }}</a>
     <app-theme-toggle></app-theme-toggle>
     <nav class="desktop-nav">
       <ul>

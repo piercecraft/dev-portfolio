@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { ContentEnService } from '../../services/content-en.service';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -23,15 +23,16 @@ export class HeaderComponent {
   lnk_about$ = this.contentEnService.getContent('lnk_about');
   lnk_contact$ = this.contentEnService.getContent('lnk_contact');
 
-  name = toSignal(this.name$, { initialValue: '' });
+  name: Signal<string> = toSignal(this.name$, { initialValue: '' })! as Signal<string>;
   lnk_home = toSignal(this.lnk_home$, { initialValue: 'home' });
   lnk_skills = toSignal(this.lnk_skills$, { initialValue: 'skills' });
   lnk_projects = toSignal(this.lnk_projects$, { initialValue: 'projects' });
   lnk_about = toSignal(this.lnk_about$, { initialValue: 'about' });
   lnk_contact = toSignal(this.lnk_contact$, { initialValue: 'contact' });
 
-
-  
+  get nameData() {
+    return { 'data-content': this.name() };
+  }
 
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
