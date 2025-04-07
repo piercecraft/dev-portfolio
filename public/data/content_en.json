@@ -97,10 +97,15 @@
     "prop": "lbl_contact",
     "text": "Contact Me"
   },
+  {
+    "id": 999,
+    "prop": "lbl_about",
+    "text": "Built With"
+  },
   { "id": 15, "prop": "lnk_home", "text": "Home" },
   { "id": 16, "prop": "lnk_skills", "text": "Skills" },
   { "id": 17, "prop": "lnk_projects", "text": "Projects" },
-  { "id": 18, "prop": "lnk_about", "text": "About" },
+  { "id": 18, "prop": "lnk_about", "text": "Built With" },
   { "id": 19, "prop": "lnk_contact", "text": "Contact" },
   { "id": 20, "prop": "rights", "text": "All rights reserved" },
   {

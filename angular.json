@@ -36,7 +36,8 @@
                 "output": "/"
               },
               "src/favicon.ico",
-              "src/.nojekyll"
+              "src/.nojekyll",
+              "src/README.md"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/azure-blue.css",
