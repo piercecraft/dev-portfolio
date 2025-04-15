@@ -1,0 +1,7 @@
+{
+  "name": "dev-portfolio",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
