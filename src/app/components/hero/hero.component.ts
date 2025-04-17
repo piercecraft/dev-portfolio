@@ -104,9 +104,9 @@ export class HeroComponent implements AfterViewInit {
 
   heroImage() {
     if (this.themeService.currentTheme === 'dark') {
-      return '/img/screen-dark.jpg'
+      return 'img/screen-dark.jpg'
     } else {
-      return '/img/screen-light.jpg'
+      return 'img/screen-light.jpg'
     }
   }
 
