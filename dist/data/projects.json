@@ -40,8 +40,8 @@
     "description": "Led the complete modernization of a mission-critical Electronic Data Capture (EDC) system for global clinical trials, transitioning from legacy Java/JSP to .NET framework while maintaining uninterrupted service.",
     "highlights": [
       "Reverse-engineered and restored 60% incomplete legacy Java codebase from partial source and client artifacts",
-      "Architected and implemented modern .NET MVC solution reducing maintenance costs by 40%",
-      "Maintained 100% functionality parity during transition, preserving $10M+ annual support contracts",
+      "Architected and implemented modern .NET MVC solution greatly reducing maintenance costs",
+      "Maintained 100% functionality parity during transition, preserving 100% of annual support contracts",
       "Delivered on aggressive timelines despite complex regulatory requirements"
     ],
     "technologies": [".NET", "C#", "ASP.NET", "MSSQL", "Java", "JSP"],
