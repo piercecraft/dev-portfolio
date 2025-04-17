@@ -23,8 +23,12 @@
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/platform-server": "^19.2.5",
     "@angular/router": "^19.2.0",
+    "@fortawesome/angular-fontawesome": "^1.0.0",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@tailwindcss/cli": "^4.1.2",
     "@tailwindcss/postcss": "^4.1.2",
+    "dev-portfolio": "file:",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

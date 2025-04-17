@@ -1,6 +1,6 @@
 .hero {
     /* Only visual styling - no layout constraints */
-    background: linear-gradient(to bottom, var(--surface) 0%, var(--background) 100%);
+    // background: linear-gradient(to bottom, var(--surface) 0%, var(--background) 100%);
     padding: 2rem 0;
   
     @media (min-width: 768px) {
@@ -11,12 +11,27 @@
     &::before {
       content: none; /* Remove if causing issues */
     }
+    .component {
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+    
+      &:hover {
+        // transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(76, 65, 174, 0.309);
+      }
+    }
   }
   
   /* Text elements inherit from app layout */
   .hero-content {
-    /* No width/margin/padding overrides */
-    /* Only typography styles */
+    display: flexbox;
+    flex-direction: row;
+    
     p {
       font-size: 1.1rem;
       line-height: 1.7;
@@ -26,13 +41,141 @@
         font-size: 1.2rem;
       }
     }
+
+    .tech-bar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      padding: 0.4rem 0;
+      background-color: var(--primary-dark);
+      border-radius: 20px;
+      opacity: 0.9;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+      overflow: visible; // Change from hidden to visible
+      position: relative; // Add this to establish a stacking context
+    
+      p.tech-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        color: var(--text-light);
+        margin: 0;
+    
+        span.tech-list-tech {
+          flex: 1;
+          min-width: max-content;
+          text-align: center;
+          padding: 0.3rem 0.5rem;
+          
+          .ng-fa-icon {
+            margin-right: 0.3rem;
+          }
+        }
+      }
+
+
+    
+    
+      /* Mobile styles */
+      @media (max-width: 767px) {
+        padding: 0.8rem 0;
+        border-radius: 8px;
+        margin-left: 0;
+        width: 100%;
+    
+        p.tech-list {
+          flex-direction: column;
+          height: 1.5em; // Single line height
+          position: relative;
+          overflow: hidden;
+          justify-content: center;
+          font-size: 1.4rem;
+          transition: none !important;
+    
+          span.tech-list-tech {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            text-align: center;
+            padding: 0.2rem 0;
+            
+            pointer-events: none;
+            transition: none !important;
+              
+            /* Initial hidden state */
+            opacity: 0;
+            transform: translateY(20px);
+    
+            &.active {
+              opacity: 1;
+              transform: translateY(0);
+            }
+    
+            &.exiting {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+          }
+        }
+      }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 0.9; transform: translateY(0); }
+    }
+
+    @keyframes scrollTech {
+      0% {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+      10% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      90% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+    }
+
+    .hero-image {
+      float: right;
+      margin: 0 2rem;
+      .hero-image {
+        float: right;
+        margin: 0 2rem;
+        max-width: 472px; /* Example: Take up half the width on larger screens */
+        height: auto;
+      }
+      
+      /* For mobile screens (example: max-width 768px) */
+      @media (max-width: 768px) {
+          float: none; /* Remove float on mobile */
+          margin: 1rem 0; /* Adjust margin for vertical stacking */
+          width: 100%; /* Make it take full width on mobile */
+      }
+    }
   }
   
   .hero-title {
     display: flex;
     flex-direction: column;
     gap: 0.75rem; // Increased from 0.5rem
-    margin-bottom: 1.5rem; // Increased from 1rem
+    margin-bottom: 1rem; // Increased from 1rem
     
     .title-line {
       font-size: 2.5rem;
@@ -67,7 +210,7 @@
       }
     }
   }
-  
+
   .section-title {
     font-size: 1.75rem;
     margin-bottom: 1.25rem;
@@ -150,5 +293,84 @@
     &:active {
       transform: translateY(0);
       transition-duration: 0.1s;
+    }
+  }
+  .tech-list-tech {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: max-content;
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+    
+    > :not(.tech-tooltip) {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+  
+    .tech-tooltip {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--surface);
+      color: var(--text-primary);
+      padding: 0.6rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-family: var(--font-sans);
+      min-width: 160px;
+      max-width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      visibility: hidden; // Crucial - hides by default
+      opacity: 0; // Crucial - starts transparent
+      transition: visibility 0s 3s, opacity 0.3s linear;
+      z-index: 100;
+      border: 1px solid var(--primary);
+      pointer-events: none;
+      white-space: normal;
+      
+      /* Default position (above) */
+      bottom: calc(100% + 8px);
+      
+      /* Arrow for top position */
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--surface) transparent transparent transparent;
+      }
+      
+      /* Flipped position (below) */
+      &.bottom {
+        bottom: auto;
+        top: calc(100% + 8px);
+        
+        &::after {
+          top: auto;
+          bottom: 100%;
+          border-color: transparent transparent var(--surface) transparent;
+        }
+      }
+    }
+  
+    &:hover .tech-tooltip {
+      visibility: visible; // Only show on hover
+      opacity: 1; // Fade in
+      transition-delay: 0s; /* Remove delay on hover in */
+    }
+  
+    /* Hide on mobile */
+    @media (max-width: 767px) {
+      .tech-tooltip {
+        display: none !important;
+      }
     }
   }

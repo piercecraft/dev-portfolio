@@ -1,11 +1,102 @@
 <section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1 class="hero-title">
-        <span class="title-line">{{ name() }}</span>
-        <span class="title-line accent">{{ title() }}</span>
-        <span class="subtitle">{{ subtitle() }}</span>
-      </h1>
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <span class="title-line">{{ name() }}</span>
+      <span class="title-line accent">{{ title() }}</span>
+      <span class="subtitle">{{ subtitle() }}</span>
+    </h1>
+    <div class="tech-bar">
+      <p class="tech-list">
+        <span class="tech-list-tech">
+          <span>
+            <fa-icon [icon]="faSeedling"></fa-icon>
+            <span>homemade</span>
+          </span>
+          <span class="tech-tooltip">
+            Core structure and styling hand-coded with HTML and CSS, integrated
+            within an Angular v19 framework and utilizing the FontAwesome icon
+            library.
+          </span>
+        </span>
+        <span class="tech-list-tech">
+          <span>
+            <fa-icon [icon]="faAngular"></fa-icon>
+            <span>angular</span>
+          </span>
+          <span class="tech-tooltip">
+            Angular v19, utilizing modern features like Signals for reactive
+            state management and standalone components for a streamlined
+            architecture.
+          </span>
+        </span>
+        <span class="tech-list-tech">
+          <span>
+            <fa-icon [icon]="faTerminal"></fa-icon>
+            <span>typescript</span>
+          </span>
+          <span class="tech-tooltip">
+            TypeScript v5.3, a statically-typed superset of JavaScript,
+            enhancing code maintainability and reducing errors through explicit
+            type definitions and model-driven development.
+          </span>
+        </span>
+        <span class="tech-list-tech">
+          <span>
+            <fa-icon [icon]="faMobileScreenButton"></fa-icon>
+            <span>responsive</span>
+          </span>
+          <span class="tech-tooltip">
+            Designed and developed to provide an optimal viewing experience
+            across a wide range of devices, including mobile phones, tablets,
+            and desktop computers.
+          </span>
+        </span>
+        <span class="tech-list-tech">
+          <span>
+            <fa-icon [icon]="faLanguage"></fa-icon>
+            <span>i18n</span>
+          </span>
+          <span class="tech-tooltip">
+            Prepared for internationalization (i18n), allowing for easy
+            adaptation and translation into multiple languages.
+          </span>
+        </span>
+        <span class="tech-list-tech">
+          <span>
+            <fa-icon [icon]="faFontAwesome"></fa-icon>
+            <span>fontawesome</span>
+          </span>
+          <span class="tech-tooltip">
+            Utilizing Font Awesome for scalable vector graphics (SVG) icons,
+            ensuring crisp rendering across different screen resolutions.
+          </span>
+        </span>
+        <span class="tech-list-tech">
+          <span>
+            <fa-icon [icon]="faSass"></fa-icon>
+            <span>scss</span>
+          </span>
+          <span class="tech-tooltip">
+            Using SCSS (Sass), a CSS preprocessor that extends the functionality
+            of CSS with features like variables, nesting, and mixins for more
+            organized and maintainable stylesheets.
+          </span>
+        </span>
+        <span class="tech-list-tech">
+          <span>
+            <fa-icon [icon]="faStream"></fa-icon>
+            <span>rxjs</span>
+          </span>
+          <span class="tech-tooltip">
+            Leveraging RxJS (Reactive Extensions for JavaScript) for managing
+            asynchronous operations and handling data streams, contributing to a
+            more reactive and efficient user interface.
+          </span>
+        </span>
+      </p>
+    </div>
+    <div class="component">
+      <img src="{{ heroImage() }}" alt="Hero Image" class="hero-image" />
 
       <div class="intro-section">
         @for (line of intro(); track $index) {
@@ -14,7 +105,8 @@
         </p>
         }
       </div>
-
+    </div>
+    <div class="component">
       <div class="skills-section">
         <h2 class="section-title">{{ skillTitle() }}</h2>
         @for (line of skills(); track $index) {
@@ -23,7 +115,8 @@
         </p>
         }
       </div>
-
+    </div>
+    <div class="component">
       <div class="career-section">
         <h2 class="section-title">{{ careerTitle() }}</h2>
         <p class="career-text">
@@ -50,6 +143,7 @@
             } }
           </ul>
         </div>
+
         <p class="career-text">
           {{ careerIntro2() }}
         </p>
@@ -61,31 +155,31 @@
           </ul>
         </div>
       </div>
+    </div>
 
-      <div class="cta-section">
-        <p class="cta-text">
-          {{ careerOutro() }}
-        </p>
-        <div class="cta-buttons">
-          <a
-            routerLink="/projects"
-            class="btn btn-primary"
-            routerLinkActive="active"
-            >{{ lbl_viewProjects() }}</a
-          >
-          <a
-            routerLink="/about"
-            class="btn btn-secondary"
-            routerLinkActive="active"
-            >{{ lbl_about() }}</a
-          >
-          <a
-            routerLink="/contact"
-            class="btn btn-secondary"
-            routerLinkActive="active"
-            >{{ lbl_contact() }}</a
-          >
-        </div>
+    <div class="cta-section">
+      <p class="cta-text">
+        {{ careerOutro() }}
+      </p>
+      <div class="cta-buttons">
+        <a
+          routerLink="/projects"
+          class="btn btn-primary"
+          routerLinkActive="active"
+          >{{ lbl_viewProjects() }}</a
+        >
+        <a
+          routerLink="/about"
+          class="btn btn-secondary"
+          routerLinkActive="active"
+          >{{ lbl_about() }}</a
+        >
+        <a
+          routerLink="/contact"
+          class="btn btn-secondary"
+          routerLinkActive="active"
+          >{{ lbl_contact() }}</a
+        >
       </div>
     </div>
   </div>

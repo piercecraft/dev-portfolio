@@ -20,6 +20,7 @@
   // Text
   --text-primary: #1e293b;
   --text-secondary: #64748b;
+  --text-reversed: #dae6f3;
   
   // Semantic
   --success: #10b981;
@@ -32,6 +33,10 @@
   --header-bg-color: #ffffff;
   --border-color: rgba(0, 0, 0, 0.05);
   --primary-rgb: 37, 99, 235;
+
+  --text-light: #f0f0f0;
+  --text-light-secondary: #aaa;
+  --accent-color: red;
 
   // Gradients
   --gradient-primary: linear-gradient(
@@ -67,6 +72,7 @@
   // Text
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
+  --text-reversed: #2a3953;
 
   // Special
   --header-bg-color: #1e293b;
@@ -128,7 +134,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
   line-height: var(--line-height-tight);
   font-weight: 600;
 }

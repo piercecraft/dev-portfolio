@@ -5,9 +5,9 @@
       [class.dark]="this.themeService.currentTheme === 'dark'"
     >
       @if (this.themeService.currentTheme === 'dark') {
-      <span class="icon">🌙</span>
+      <span class="icon"><fa-icon [icon]="faMoon"></fa-icon></span>
       } @else {
-      <span class="icon">☀️</span>
+      <span class="icon"><fa-icon [icon]="faSun"></fa-icon></span>
       }
     </div>
   </div>
