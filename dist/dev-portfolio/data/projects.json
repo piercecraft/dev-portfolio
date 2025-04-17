@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "AutoEncoder Medical Coding System",
+    "company": "Anju Software",
+    "period": "2015-2023",
+    "description": "Transformed medical dictionary coding module into standalone API-driven product with advanced clinical terminology capabilities.",
+    "highlights": [
+      "Decoupled from monolithic EDC system into microservice architecture",
+      "Implemented WHODrug/MedDRA dictionary support with version management",
+      "Developed Angular 2 frontend with dynamic, configurable data grids",
+      "Built predictive search and user-customizable workflows",
+      "Maintained complete audit trail of all coding operations"
+    ],
+    "technologies": [
+      "Angular",
+      "AngularJS",
+      "TypeScript",
+      "C#",
+      "Entity Framework",
+      "REST API",
+      "MSSQL",
+      "Bootstrap",
+      "Angular Material",
+      "RxJS",
+      "PrimeNG",
+      "AG Grid"
+    ],
+    "achievements": [
+      "38% increase in coding speed for end users",
+      "Enabled new revenue stream as standalone product",
+      "Reduced support tickets by 65% through improved UI/UX"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "eClinical Suite Modernization",
+    "company": "Anju Software",
+    "period": "2010-2023",
+    "description": "Led the complete modernization of a mission-critical Electronic Data Capture (EDC) system for global clinical trials, transitioning from legacy Java/JSP to .NET framework while maintaining uninterrupted service.",
+    "highlights": [
+      "Reverse-engineered and restored 60% incomplete legacy Java codebase from partial source and client artifacts",
+      "Architected and implemented modern .NET MVC solution greatly reducing maintenance costs",
+      "Maintained 100% functionality parity during transition, preserving 100% of annual support contracts",
+      "Delivered on aggressive timelines despite complex regulatory requirements"
+    ],
+    "technologies": [".NET", "C#", "ASP.NET", "MSSQL", "Java", "JSP"],
+    "achievements": [
+      "Zero downtime during multi-year transition",
+      "92% performance improvement in modernized version",
+      "Enabled new feature development previously impossible in legacy system"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Major Technology Tier Transition",
+    "company": "NDA",
+    "period": "2023-2024",
+    "description": "Designed and implemented a cloud-based solution using AWS and serverless functions for improved scalability and performance.",
+    "highlights": [
+      "Led full project lifecycle from requirements to deployment",
+      "Achieved 100% client satisfaction",
+      "Enabled handling of increased demand through scalable architecture"
+    ],
+    "technologies": ["AWS", "Serverless", "Cloud Architecture"]
+  },
+  {
+    "id": 4,
+    "title": "Cross-Product Development",
+    "company": "Anju Software",
+    "period": "2010-2023",
+    "description": "Provided critical development support across multiple clinical trial software products.",
+    "highlights": [
+      "Contributed to TrialMaster EDC (React 0.14-15.1)",
+      "Enhanced Promasys CDM system data processing pipelines",
+      "Optimized TrialOne clinic automation workflows",
+      "Established company-wide UI/UX standards",
+      "Conducted Angular training for offshore teams"
+    ],
+    "technologies": ["React", "Angular", "C#", "SQL", "TypeScript"],
+    "achievements": [
+      "Enabled on-time delivery of 3 major product releases",
+      "Reduced cross-team knowledge silos through documentation",
+      "Mentored 15+ developers across teams"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Citrix NFuse Web Interface",
+    "company": "Citrix Systems",
+    "period": "1999-2009",
+    "description": "Developed the web interface for Citrix's application virtualization platform, enabling browser-based access to Windows, Java, and UNIX applications hosted on Citrix servers.",
+    "highlights": [
+      "Created unified web portal replacing desktop-bound Program Neighborhood client",
+      "Implemented multi-protocol support (ICA, Java, Win32) for cross-platform compatibility",
+      "Designed developer APIs for ASP, JSP, and custom servlet integration",
+      "Implemented HTML substitution tag system for administrator customization"
+    ],
+    "technologies": ["Java", "ASP", "JSP", "ICA Protocol", "ActiveX", "HTML"],
+    "achievements": [
+      "2003 Crossroads A-List Award for Best Mid-Market Portal",
+      "Enabled Fortune 500 adoption through web accessibility",
+      "Reduced client deployment costs through browser-based access"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Citrix Support Portal",
+    "company": "Citrix Systems",
+    "period": "1999-2009",
+    "description": "Transformed static support site into dynamic customer hub with self-service features, partner access, and training resources.",
+    "highlights": [
+      "Led front-end modernization from static HTML to dynamic ASP.NET platform",
+      "Implemented online licensing system with automated distribution",
+      "Developed comprehensive knowledge base with intelligent search",
+      "Built partner portal with tiered access controls",
+      "Launched video training platform integrated with support ticketing"
+    ],
+    "technologies": [
+      "ASP.NET",
+      "JavaScript",
+      "jQuery",
+      "HTML5",
+      "CSS3",
+      "SQL Server"
+    ],
+    "achievements": [
+      "Reduced support calls by 40% through self-service tools",
+      "Increased partner engagement by 65%",
+      "Achieved 99.9% uptime for critical licensing system"
+    ],
+    "metrics": {
+      "users": "250,000+ monthly active users",
+      "content": "10,000+ knowledge base articles",
+      "partners": "5,000+ certified partners onboarded"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Citrix Corporate Website",
+    "company": "Citrix Systems",
+    "period": "1999-2009",
+    "description": "Sole developer and architect of Citrix's primary corporate website and marketing platform.",
+    "highlights": [
+      "Single-handedly maintained entire corporate web presence",
+      "Collaborated with C-level executives on strategic messaging",
+      "Implemented lead generation systems with marketing automation",
+      "Developed custom CMS for global content management",
+      "Optimized for early search engine visibility (pre-SEO era)"
+    ],
+    "technologies": ["ASP", "VBScript", "JavaScript", "HTML4", "CSS2", "IIS"],
+    "achievements": [
+      "220% increase in qualified sales leads",
+      "Recipient of 3 consecutive B2B Web Excellence Awards",
+      "Supported 50+ country/localized versions"
+    ],
+    "recognitions": [
+      "Citrix Employee of the Quarter (Q2 2003)",
+      "Marketing Team MVP Award 2005"
+    ]
+  }
+]
